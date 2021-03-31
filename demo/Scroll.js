@@ -9,7 +9,7 @@
  import React, { useState } from 'react';
  import {
    StyleSheet,
-   View,Text, ScrollView,
+   View,Text, ScrollView, RefreshControl,
  } from 'react-native';
  
  
@@ -30,8 +30,19 @@
          {key:13,item:'item 34'},
          {key:14,item:'item 35'},
      ])
+
+     const [Refreshing,setRefreshing]=useState(false);
+     const  onRefresh=()=>
+     {
+       setRefreshing(true);
+       setItems([...Items,{key:69,item:'Item  69'}]);
+       setRefreshing(false);
+     }
  
-   return (<ScrollView style={styles.body}>
+   return (<ScrollView style={styles.body}
+    refreshControl={<RefreshControl
+      refreshing={Refreshing}
+      onRefresh={onRefresh}/>}>
  {
     Items.map((obj)=>{
         return (<View key={obj.key}><Text style={styles.text}>{obj.item}</Text></View>)
