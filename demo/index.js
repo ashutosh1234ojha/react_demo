@@ -7,11 +7,11 @@ import App from './App';
 import {name as appName} from './app.json';
 import Appp from './Appp';
 import MyFlex from './MyFlex';
-import Scroll from './Scroll';
+import MyFlatList from './MyFlatList';
 
 
 
 
 // AppRegistry.registerComponent(appName, () => App);
-AppRegistry.registerComponent(appName, () => Scroll);
+AppRegistry.registerComponent(appName, () => MyFlatList);
 
