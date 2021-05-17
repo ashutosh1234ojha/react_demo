@@ -8,7 +8,7 @@ const MyInputField=()=>{
 
     const [name,setName]=useState('');
     return (
-        <View>
+        <View style={style.body}>
         <Text style={style.text}>Please enter some text</Text>
         <TextInput style={style.textInput} placeholder='Jhon' 
         onChangeText={(value=>setName(value))}/>
@@ -24,7 +24,12 @@ const style=StyleSheet.create({
     body:{
       flex:1,
       backgroundColor:'#f0ff8f',
-      alignItems:'center',
+      flexDirection:'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+
+      
+
     },
     text:{
       color:'#00f000',
@@ -35,7 +40,9 @@ const style=StyleSheet.create({
          width:200,
          borderColor:'#000000',
          borderWidth:1,
-         textAlign:'center'
+         textAlign:'center',
+
+
 
 
      }   

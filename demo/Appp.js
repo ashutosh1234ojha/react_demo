@@ -22,7 +22,6 @@ const Appp = () => {
 
 
  const clickListener=()=>{
-
   setName('ojha')
   setSession({number:7,title:'our'})
   setCount(count=>count+1)
