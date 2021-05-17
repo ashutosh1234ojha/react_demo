@@ -1,23 +1,32 @@
 
  import React, { useState } from 'react';
  import {
-   StyleSheet,Text, TextInput,View,
+   Button,
+   StyleSheet,Text, TextInput,TouchableOpacity,View,
  } from 'react-native';
 
 const MyInputField=()=>{
 
     const [name,setName]=useState('');
+    const [submitted,setSubmitted]=useState(false);
+    const onPressHandler=()=>{
+setSubmitted(!submitted);
+    }
     return (
         <View style={style.body}>
         <Text style={style.text}>Please enter some text</Text>
         <TextInput style={style.textInput} placeholder='Jhon' 
         onChangeText={(value=>setName(value))}/>
-        <Text style={style.text}>{name}</Text>
-
+          <Button style={style.button} title={submitted ?"clear":"Click"} onPress={onPressHandler}/>
+        <TouchableOpacity style={style.button} title={submitted ?"clear":"Click"} onPress={onPressHandler}>
+        <Text style={style.text}>{submitted ?'clear':'Click'}</Text>
+        </TouchableOpacity>
+        {submitted ?<Text style={style.text}>{name}</Text>:null
+      }
         </View>
 
         );
-
+       
 };
 
 const style=StyleSheet.create({
@@ -37,15 +46,19 @@ const style=StyleSheet.create({
       margin:14
         },
      textInput:{
-         width:200,
+         width:400,
          borderColor:'#000000',
          borderWidth:1,
          textAlign:'center',
-
-
-
-
-     }   
+     }  ,
+     button:{
+       margin:16,
+      width:200,
+      backgroundColor:'#DC143C',
+      alignItems:'center',
+  
+      
+  }  
         
   });
   export default MyInputField;
