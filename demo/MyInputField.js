@@ -1,8 +1,9 @@
 
  import React, { useState } from 'react';
  import {
+   Alert,
    Button,
-   StyleSheet,Text, TextInput,TouchableOpacity,View,
+   StyleSheet,Text, TextInput,ToastAndroid,TouchableOpacity,View,
  } from 'react-native';
 
 const MyInputField=()=>{
@@ -10,7 +11,16 @@ const MyInputField=()=>{
     const [name,setName]=useState('');
     const [submitted,setSubmitted]=useState(false);
     const onPressHandler=()=>{
-setSubmitted(!submitted);
+      if(name.length<3){
+// ToastAndroid.show('Greater than 3',ToastAndroid.SHORT)
+Alert.alert("Warning",
+"Greater than three",
+[{text:'cancel',onPress:()=>{console.warn("Message")}},
+{text:'Ok',onPress:()=>{console.warn("My")}}] )
+      }else{
+        setSubmitted(!submitted);
+      }
+
     }
     return (
         <View style={style.body}>
