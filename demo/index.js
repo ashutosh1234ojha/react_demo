@@ -8,7 +8,7 @@ import {name as appName} from './app.json';
 import Appp from './Appp';
 import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
-import MyInputField from './MyInputField';
+import CustomAlert from './CustomAlert';
 
 
 
@@ -16,5 +16,5 @@ import MyInputField from './MyInputField';
 
 
 // AppRegistry.registerComponent(appName, () => App);
-AppRegistry.registerComponent(appName, () => MyInputField);
+AppRegistry.registerComponent(appName, () => CustomAlert);
 
