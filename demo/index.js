@@ -8,7 +8,7 @@ import {name as appName} from './app.json';
 import Appp from './Appp';
 import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
-import CustomAlert from './CustomAlert';
+import CustomImage from './CustomImage';
 
 
 
@@ -16,5 +16,5 @@ import CustomAlert from './CustomAlert';
 
 
 // AppRegistry.registerComponent(appName, () => App);
-AppRegistry.registerComponent(appName, () => CustomAlert);
+AppRegistry.registerComponent(appName, () => CustomImage);
 
