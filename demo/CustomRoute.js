@@ -8,8 +8,7 @@ import React, { useState } from 'react';
  } from 'react-native';
  import { createStackNavigator } from '@react-navigation/stack';
  import { NavigationContainer } from '@react-navigation/native';
- import ScreenA from './customNav/ScreenA'
- import ScreenB from './customNav/ScreenB'
+
 
 
 
@@ -17,39 +16,39 @@ import React, { useState } from 'react';
 
 
 
-//  function screenA({navigation}){
-//     const  onPressHandler=()=>{
+ function screenA({navigation}){
+    const  onPressHandler=()=>{
 
-//        // navigation.navigate('Screen_B')
-//         navigation.replace('Screen_B')
+       // navigation.navigate('Screen_B')
+        navigation.replace('Screen_B')
 
-//     }
-//      return(
-//          <View>
-//          <Text>Screen A</Text>
-//          <Pressable onPress={onPressHandler}>
-//          <Text>Go to Screen B</Text>
-//          </Pressable>
-//          </View>
-//      )
-//  }
+    }
+     return(
+         <View>
+         <Text>Screen A</Text>
+         <Pressable onPress={onPressHandler}>
+         <Text>Go to Screen B</Text>
+         </Pressable>
+         </View>
+     )
+ }
 
-//  function screenB({navigation}){
-//     const  onPressHandler=()=>{
+ function screenB({navigation}){
+    const  onPressHandler=()=>{
 
-//        // navigation.navigate('Screen_A')
-//        navigation.goBack();
-//     }
-//     return(
-//         <View>
-//         <Text>Screen B</Text>
+       // navigation.navigate('Screen_A')
+       navigation.goBack();
+    }
+    return(
+        <View>
+        <Text>Screen B its beauty</Text>
 
-//         <Pressable onPress={onPressHandler}>
-//         <Text>Go back to Screen A</Text>
-//         </Pressable>
-//         </View>
-//     )
-// }
+        <Pressable onPress={onPressHandler}>
+        <Text>Go back to Screen A</Text>
+        </Pressable>
+        </View>
+    )
+}
 
  function  App() {
      return (
@@ -61,14 +60,14 @@ import React, { useState } from 'react';
         >
          <Stack.Screen 
          name="Screen_A"
-         component={ScreenA}
+         component={screenA}
          options={{
              header:()=>null
          }}/>
 
          <Stack.Screen 
          name="Screen_B"
-         component={ScreenB}/>
+         component={screenB}/>
          </Stack.Navigator>
          </NavigationContainer>
      )

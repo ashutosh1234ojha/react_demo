@@ -8,6 +8,7 @@ import {name as appName} from './app.json';
 import Appp from './Appp';
 import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
+import MainNav from './customNav/MainNav';
 import CustomRoute from './CustomRoute';
 
 
@@ -15,6 +16,7 @@ import CustomRoute from './CustomRoute';
 
 
 
+
 // AppRegistry.registerComponent(appName, () => App);
-AppRegistry.registerComponent(appName, () => CustomRoute);
+AppRegistry.registerComponent(appName, () => MainNav);
 
