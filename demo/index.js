@@ -8,7 +8,7 @@ import {name as appName} from './app.json';
 import Appp from './Appp';
 import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
-import MainNav from './customNav/MainNav';
+import MainNav from './bottomTabs/MainNav';
 import CustomRoute from './CustomRoute';
 
 

@@ -13,7 +13,7 @@ const ScreenA=({navigation})=>{
     const  onPressHandler=()=>{
 
         // navigation.navigate('Screen_B')
-         navigation.replace('Screen_B')
+        // navigation.replace('Screen_B')
  
      }
     return(

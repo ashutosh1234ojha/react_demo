@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 const ScreenB=({navigation})=>{
   const  onPressHandler=()=>{
 
-    navigation.navigate('Screen_A')
+   // navigation.navigate('Screen_A')
     // navigation.goBack();
  }
   return(
