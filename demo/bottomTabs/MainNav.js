@@ -21,17 +21,20 @@ const  MainNav=() =>{
     return (
         <NavigationContainer>
         <Tab.Navigator
-        screenOptions={(route)=>({
+        screenOptions={({route})=>({
             tabBarIcon:({focused,size,color})=>{
-                let iconName='btc';
+                let iconName;
                 if(route.name==='Screen_A'){
                     iconName='comments';
+                    size=focused?25:20;
 
                 }else if(route.name==='Screen_B'){
                     iconName='git' ;
+                    size=focused?25:20;
+
 
                 }
-                return (<FontAwesome5 name={iconName} brand />)
+                return (<FontAwesome5 name={iconName}  size={size} />)
             }
         }
             
