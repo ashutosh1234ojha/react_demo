@@ -14,6 +14,7 @@ const ScreenA=({navigation})=>{
 
         // navigation.navigate('Screen_B')
         // navigation.replace('Screen_B')
+        //Hello world
  
      }
     return(
