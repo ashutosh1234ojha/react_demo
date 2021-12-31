@@ -22,6 +22,7 @@ setDisplayWarning(true)
 
     }
     return (
+      
         <View style={style.body}>
         <Modal 
         visible={displayWaring} transparent

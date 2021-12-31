@@ -17,6 +17,6 @@ import CustomRoute from './CustomRoute';
 
 
 
-// AppRegistry.registerComponent(appName, () => App);
-AppRegistry.registerComponent(appName, () => MainNav);
+AppRegistry.registerComponent(appName, () => MyFlex);
+// AppRegistry.registerComponent(appName, () => MainNav);
 
