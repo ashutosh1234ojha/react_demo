@@ -10,6 +10,7 @@ import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
 import MainNav from './bottomTabs/MainNav';
 import CustomRoute from './CustomRoute';
+import SectionList from './SectionList';
 
 
 
@@ -17,6 +18,7 @@ import CustomRoute from './CustomRoute';
 
 
 
-AppRegistry.registerComponent(appName, () => MyFlex);
+
+AppRegistry.registerComponent(appName, () => SectionList);
 // AppRegistry.registerComponent(appName, () => MainNav);
 
