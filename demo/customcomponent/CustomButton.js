@@ -10,7 +10,7 @@ import {
 const CustomButton=(props)=>{
 return(
     <TouchableOpacity style={style.button}  onPress={props.onPressFun}>
-        <Text style={style.text}>{props.title}</Text>
+        <Text style={style.text}>{props.titles}</Text>
         </TouchableOpacity>
 );
 }

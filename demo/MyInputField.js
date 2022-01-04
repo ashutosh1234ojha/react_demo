@@ -16,7 +16,7 @@ const MyInputField=()=>{
 Alert.alert("Warning",
 "Greater than three",
 [{text:'cancel',onPress:()=>{console.warn("Message")}},
-{text:'Ok',onPress:()=>{console.warn("My")}}] )
+{text:'Ok',onPress:()=>{console.warn("My")}}],{cancelable:true} )
       }else{
         setSubmitted(!submitted);
       }

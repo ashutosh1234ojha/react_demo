@@ -26,7 +26,9 @@ setDisplayWarning(true)
         <View style={style.body}>
         <Modal 
         visible={displayWaring} transparent
-        onRequestClose={()=>setDisplayWarning(false)}>
+        onRequestClose={()=>setDisplayWarning(false)}
+        animationType='slide'
+        >
         <View style={style.centerView}>
         <View style={style.warningBody}>
         <Text>The text  must be greater than 3</Text>

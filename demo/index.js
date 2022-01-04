@@ -10,7 +10,7 @@ import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
 import MainNav from './bottomTabs/MainNav';
 import CustomRoute from './CustomRoute';
-import SectionList from './SectionList';
+import HomeScreen from './stacknavigator/HomeScreen';
 
 
 
@@ -19,6 +19,6 @@ import SectionList from './SectionList';
 
 
 
-AppRegistry.registerComponent(appName, () => SectionList);
+AppRegistry.registerComponent(appName, () => HomeScreen);
 // AppRegistry.registerComponent(appName, () => MainNav);
 

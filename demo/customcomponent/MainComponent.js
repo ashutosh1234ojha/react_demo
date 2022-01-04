@@ -32,12 +32,12 @@ ToastAndroid.show('Greater than 3',ToastAndroid.SHORT)
         onChangeText={(value=>setName(value))}/>
         <CustomButton
         onPressFun={onPressHandler}
-        title={submitted ?"Clear":"PressMy"}
+        titles={submitted ?"Clear":"PressMy"}
         />
 
         <CustomButton
         onPressFun={onPressHandler}
-        title={submitted ?"Clean":"Dabao"}
+        titles={submitted ?"Clean":"Dabaop"}
         />
        
         {submitted ?<Text style={style.text}>{name}</Text>:null

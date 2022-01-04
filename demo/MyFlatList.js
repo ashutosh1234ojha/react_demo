@@ -18,9 +18,6 @@
          {name:'item 1111'},
          {name:'item 211'},
          {name:'item 1'},
-
-
-        
      ])
 
      const [Refreshing,setRefreshing]=useState(false);
