@@ -27,21 +27,36 @@ const  MainNav=() =>{
                 if(route.name==='Screen_A'){
                     iconName='comments';
                     size=focused?25:20;
+                    color=focused ?'#FFC0CB':'	#4B0082'
 
                 }else if(route.name==='Screen_B'){
                     iconName='git' ;
                     size=focused?25:20;
+                    color=focused ?'#FFC0CB':'	#4B0082'
+
 
 
                 }
-                return (<FontAwesome5 name={iconName}  size={size} />)
+                return (<FontAwesome5 name={iconName}  size={size} color={color} />)
             }
         }
             
-        )}>
+        )}
+        tabBarOptions={{
+            activeTintColor:'#FFC0CB',
+            inactiveTintColor:'#4B0082',
+            activeBackgroundColor:'	#FFD700',
+            inactiveBackgroundColor:'#ADFF2F',
+            showLabel:false,
+            labelStyle:{fontSize:14}
+
+        }}
+        
+        >
         <Tab.Screen 
         name="Screen_A"
         component={ScreenA}
+        options={{tabBarBadge:3}}
     />
 
         <Tab.Screen 

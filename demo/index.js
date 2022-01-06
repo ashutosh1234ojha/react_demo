@@ -19,6 +19,6 @@ import HomeScreen from './stacknavigator/HomeScreen';
 
 
 
-AppRegistry.registerComponent(appName, () => HomeScreen);
-// AppRegistry.registerComponent(appName, () => MainNav);
+// AppRegistry.registerComponent(appName, () => HomeScreen);
+AppRegistry.registerComponent(appName, () => MainNav);
 
