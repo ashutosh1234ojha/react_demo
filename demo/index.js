@@ -8,9 +8,11 @@ import {name as appName} from './app.json';
 import Appp from './Appp';
 import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
-import MainNav from './bottomTabs/MainNav';
-import CustomRoute from './CustomRoute';
+import TopTabMain from './bottomTabs/TopTabMain';
+import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreen from './stacknavigator/HomeScreen';
+import MaterialBottomTabsMain from './MaterialBottomTabsMain';
+
 
 
 
@@ -20,5 +22,5 @@ import HomeScreen from './stacknavigator/HomeScreen';
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => MainNav);
+AppRegistry.registerComponent(appName, () => TopTabMain);
 
