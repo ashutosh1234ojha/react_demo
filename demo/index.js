@@ -10,7 +10,7 @@ import MyFlex from './MyFlex';
 import MyFlatList from './MyFlatList';
 import TopTabMain from './bottomTabs/TopTabMain';
 import DrawerMain from './navigationDrawer/DrawerMain';
-import HomeScreen from './stacknavigator/HomeScreen';
+import HomeScreenPass from './passingData/HomeScreenPass';
 import MaterialBottomTabsMain from './MaterialBottomTabsMain';
 
 
@@ -22,5 +22,5 @@ import MaterialBottomTabsMain from './MaterialBottomTabsMain';
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => TopTabMain);
+AppRegistry.registerComponent(appName, () => HomeScreenPass);
 
