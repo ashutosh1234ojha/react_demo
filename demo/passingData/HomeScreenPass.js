@@ -16,16 +16,16 @@ const  HomeScreenPass=(navigation) =>{
 
         headerShown:true,
         gestureEnabled:true,
-        swipeEnabled:true,
-        drawerPosition:'right',
-  
-        
+        swipeEnabled:true,        
       }}
       overlayColor="#ff0"
       drawerStyle={{backgroundColor:'#00f',width:150}}
           >
-      <Drawer.Screen name="Profile" component={Profile} options={{title:"Profile Menu"}} />
-      <Drawer.Screen name="Setting" component={Setting} options={{title:"Setting Menu"}}/>
+          <Drawer.Screen name="Profile" component={Profile} options={{title:"Profile Menu"}} 
+          initialParams={{ItemName:'Ankur',ItemId:12}}/>
+          <Drawer.Screen name="Setting" component={Setting} options={{title:"Setting Menu"}}/>
+
+    
     </Drawer.Navigator>
         </NavigationContainer>
     )

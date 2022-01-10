@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 const Setting=({navigation})=>{
   const  onPressHandler=()=>{
 
-   // navigation.navigate('Screen_A')
+   navigation.navigate('Profile',{ItemName:'Ashutosh',ItemId:12})
     // navigation.goBack();
  }
   return(
@@ -20,7 +20,7 @@ const Setting=({navigation})=>{
     <Text>Screen B</Text>
 
     <Pressable onPress={onPressHandler}>
-    <Text>Go back to Screen A</Text>
+    <Text>Go to Profile</Text>
     </Pressable>
     </View>
 )
