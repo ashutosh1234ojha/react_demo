@@ -15,13 +15,14 @@ const  HomeScreenPass=(navigation) =>{
       screenOptions={{
 
         headerShown:true,
-        gestureEnabled:false,
+        gestureEnabled:true,
         swipeEnabled:true,
-        drawerPosition:'left',
-        overlayColor: '#ff0',
-        drawerStyle:{backgroundColor:'#00f',width:150},
+        drawerPosition:'right',
+  
         
       }}
+      overlayColor="#ff0"
+      drawerStyle={{backgroundColor:'#00f',width:150}}
           >
       <Drawer.Screen name="Profile" component={Profile} options={{title:"Profile Menu"}} />
       <Drawer.Screen name="Setting" component={Setting} options={{title:"Setting Menu"}}/>

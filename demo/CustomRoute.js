@@ -50,7 +50,7 @@ import React, { useState } from 'react';
     )
 }
 
- function  App() {
+ function  CustomRoute() {
      return (
          <NavigationContainer>
          <Stack.Navigator 
@@ -74,4 +74,4 @@ import React, { useState } from 'react';
 
  }
 
- export default App;
+ export default CustomRoute;

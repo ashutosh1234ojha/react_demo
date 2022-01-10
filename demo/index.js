@@ -11,7 +11,7 @@ import MyFlatList from './MyFlatList';
 import TopTabMain from './bottomTabs/TopTabMain';
 import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreenPass from './passingData/HomeScreenPass';
-import MaterialBottomTabsMain from './MaterialBottomTabsMain';
+import CustomRoute from './CustomRoute';
 
 
 
