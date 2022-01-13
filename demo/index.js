@@ -12,6 +12,7 @@ import TopTabMain from './bottomTabs/TopTabMain';
 import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreenPass from './passingData/HomeScreenPass';
 import GlobalHomeScreenPass from './globalstyle/screens/GlobalHomeScreenPass';
+import Base from './asyncstorage/Base'
 
 
 
@@ -22,5 +23,5 @@ import GlobalHomeScreenPass from './globalstyle/screens/GlobalHomeScreenPass';
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => GlobalHomeScreenPass);
+AppRegistry.registerComponent(appName, () => Base);
 
