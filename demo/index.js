@@ -11,7 +11,7 @@ import MyFlatList from './MyFlatList';
 import TopTabMain from './bottomTabs/TopTabMain';
 import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreenPass from './passingData/HomeScreenPass';
-import FontFile from './FontFile';
+import GlobalHomeScreenPass from './globalstyle/screens/GlobalHomeScreenPass';
 
 
 
@@ -22,5 +22,5 @@ import FontFile from './FontFile';
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => FontFile);
+AppRegistry.registerComponent(appName, () => GlobalHomeScreenPass);
 
