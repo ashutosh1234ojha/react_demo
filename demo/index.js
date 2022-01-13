@@ -11,7 +11,7 @@ import MyFlatList from './MyFlatList';
 import TopTabMain from './bottomTabs/TopTabMain';
 import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreenPass from './passingData/HomeScreenPass';
-import CustomRoute from './CustomRoute';
+import FontFile from './FontFile';
 
 
 
@@ -22,5 +22,5 @@ import CustomRoute from './CustomRoute';
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => HomeScreenPass);
+AppRegistry.registerComponent(appName, () => FontFile);
 

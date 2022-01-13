@@ -10,24 +10,23 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 
-const Profile = ({ navigation, route }) => {
+const FontFile = ({ navigation, route }) => {
 
-  const { ItemName, ItemId } = route.params;
-  const onPressHandler = () => {
+//   const { ItemName, ItemId } = route.params;
+//   const onPressHandler = () => {
 
-    // navigation.navigate('Screen_B')
-    // navigation.replace('Screen_B')
-    //Hello world 
+//     // navigation.navigate('Screen_B')
+//     // navigation.replace('Screen_B')
+//     //Hello world 
 
-  }
+//   }
   return (
     <View>
-      <Text>Screen A is my new screeen</Text>
-      <Pressable onPress={onPressHandler}>
-        <Text style={styles.text}>Go to Setting</Text>
-      </Pressable>
+      <Text style={styles.text1}>Screen A is my new screeen</Text>
+      <Text style={styles.text}>Ashtuosh</Text>
 
-      <Text style={styles.text1}>Value  comming  from Setting {ItemName} </Text>
+     
+
     </View>
   )
 
@@ -52,5 +51,5 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Profile;
+export default FontFile;
 
