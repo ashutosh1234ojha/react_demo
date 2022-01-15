@@ -6,12 +6,20 @@ import { TextInput } from 'react-native-gesture-handler';
 
 export default function Login({navigation}) {
     const [name, setName] = useState('');
+    const [age, setAge] = useState('');
+
     const setData = async () => {
-        if (name.length == 0) {
-            Alert.alert('Please enter a valid user nameaaaa')
+        if (name.length == 0&&age.length==0) {
+            Alert.alert('Please enter a valid user name and age')
         } else {
             try {
+                const user={
+                    Name:name,
+                    Age:age
+                }
                 await AsyncStorage.setItem('UserName', name);
+                await AsyncStorage.setItem('UserData', JSON.stringify(user));
+
                 navigation.navigate('Home');
             } catch (error) {
                 console.log(error);
@@ -43,6 +51,8 @@ export default function Login({navigation}) {
         <Image style={styles.logo} source={require('../assets/download.jpeg')} />
         <Text style={styles.text}>Async Storage</Text>
         <TextInput style={styles.input} placeholder='Enter your name' onChangeText={(value) => setName(value)} />
+        <TextInput style={styles.input} placeholder='Enter your Age' onChangeText={(value) => setAge(value)} />
+
         <Button
             color="#841584"
             onPress={setData}
@@ -74,7 +84,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         textAlign: 'center',
         fontSize: 20,
-        marginTop: 130,
+        marginTop: 30,
         marginBottom: 10
     },
     button: {

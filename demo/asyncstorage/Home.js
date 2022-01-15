@@ -6,6 +6,9 @@ import { TextInput } from 'react-native-gesture-handler';
 
 export default function Home({ navigation }) {
     const [name, setName] = useState('');
+    const [userAge, setUserAge] = useState('');
+    const [userName, setUserName] = useState('');
+
 
     const updateData = async () => {
         if (name.length == 0) {
@@ -13,6 +16,11 @@ export default function Home({ navigation }) {
         } else {
             try {
                 await AsyncStorage.setItem('UserName', name);
+                const user={
+                    Name:name,
+                    Age:userAge
+                }
+                await AsyncStorage.setItem('UserData', JSON.stringify(user));
                 Alert.alert('User name  update successfully')
             } catch (error) {
                 console.log(error);
@@ -26,7 +34,13 @@ export default function Home({ navigation }) {
             "User Remove Successfully",
             [
 
-                { text: "OK", onPress: () => { navigation.navigate('Login') } }
+                {
+                    text: "OK", onPress: () => {
+                        navigation.navigate('Login')
+
+                        navigation.ba
+                    }
+                }
             ]
         );
 
@@ -62,6 +76,15 @@ export default function Home({ navigation }) {
                         setName(value)
                     }
                 })
+            AsyncStorage.getItem('UserData')
+                .then(value => {
+                    if (value != null) {
+                        let user=JSON.parse(value);
+                        setUserAge(user.Age)
+                        setUserName(user.Name)
+
+                    }
+                })
 
         } catch (error) {
 
@@ -70,6 +93,7 @@ export default function Home({ navigation }) {
     }
     return <View style={styles.body}>
         <Text style={styles.text}>Welcome To Home {name}</Text>
+        <Text style={styles.text}> User's name is {userName} & age is {userAge}</Text>
         <TextInput style={styles.input} placeholder='Enter your name' value={name} onChangeText={(value) => setName(value)} />
 
         <Button
