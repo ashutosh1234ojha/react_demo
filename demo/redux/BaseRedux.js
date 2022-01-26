@@ -36,20 +36,3 @@ const BaseRedux = () => {
   };
   export default BaseRedux;
 
-//   <NavigationContainer>
-//   <MyStack.Navigator  initialRouteName="Login">
-//   <MyStack.Screen
-//   name='Login'
-//   component={Login}
-//   options={{headerShown:false}}
-//   />
-//   <MyStack.Screen
-//   name='Home'
-//   component={Home}
-//   options={{headerShown:false}}
-
-//   />
- 
-  
-//   </MyStack.Navigator>
-//   </NavigationContainer>

@@ -12,7 +12,7 @@ import TopTabMain from './bottomTabs/TopTabMain';
 import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreenPass from './passingData/HomeScreenPass';
 import GlobalHomeScreenPass from './globalstyle/screens/GlobalHomeScreenPass';
-import BaseRedux from './redux/BaseRedux'
+import BaseApi from './apihit/BaseApi'
 
 
 
@@ -23,5 +23,5 @@ import BaseRedux from './redux/BaseRedux'
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => BaseRedux);
+AppRegistry.registerComponent(appName, () => BaseApi);
 

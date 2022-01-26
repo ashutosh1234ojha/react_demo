@@ -1,5 +1,4 @@
 import { createStore,combineReducers,applyMiddleware } from "redux";
-// import { createSlice, configureStore,createStore,combineReducer,applyMiddleware } from '@reduxjs/toolkit'
 
 import thunk from "redux-thunk";
 import userReducer from "./reducers";
