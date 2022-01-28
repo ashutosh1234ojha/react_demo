@@ -13,6 +13,8 @@ import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreenPass from './passingData/HomeScreenPass';
 import GlobalHomeScreenPass from './globalstyle/screens/GlobalHomeScreenPass';
 import BaseApi from './apihit/BaseApi'
+import BaseNotification from './notification/BaseNotification'
+
 
 
 
@@ -23,5 +25,5 @@ import BaseApi from './apihit/BaseApi'
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => BaseApi);
+AppRegistry.registerComponent(appName, () => BaseNotification);
 
