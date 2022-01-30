@@ -9,7 +9,7 @@ import { Store } from './Store';
 
 const MyStack=createStackNavigator()
 
-const BaseApi = () => {
+const BaseNotification = () => {
     
     return (<Provider store={Store}>
       <NavigationContainer>
@@ -34,5 +34,5 @@ const BaseApi = () => {
       
         );
   };
-  export default BaseApi;
+  export default BaseNotification;
 

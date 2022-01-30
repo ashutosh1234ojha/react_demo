@@ -22,7 +22,6 @@ export default function Login({ navigation }) {
                 channelId: "channel-id", // (required)
                 channelName: "My channel", // (required)
             },
-            // (created) => console.log(`createChannel returned '${created}'`) // (optional) callback returns whether the channel was created, false means it already existed.
         );
     }
 

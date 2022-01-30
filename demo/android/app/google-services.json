@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "14617841710",
+    "project_id": "testreact-49212",
+    "storage_bucket": "testreact-49212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14617841710:android:a69b1d296066429f168fbf",
+        "android_client_info": {
+          "package_name": "com.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14617841710-nj0mirkgj40ghlrjk2brpj15nnnek899.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1g8tbcAOo4Aoc1VNU3xUAFp1p2EfF3yE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14617841710-nj0mirkgj40ghlrjk2brpj15nnnek899.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

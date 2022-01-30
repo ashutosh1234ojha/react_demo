@@ -22,7 +22,7 @@ export default function Home({ navigation }) {
 
         PushNotification.localNotification({
             channelId: "channel-id", 
-            title:"Your clicked on"+item.title,
+            title:"Your clicked on "+item.title,
             message:"asdfsa"
 
         })
