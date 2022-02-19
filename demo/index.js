@@ -13,7 +13,7 @@ import DrawerMain from './navigationDrawer/DrawerMain';
 import HomeScreenPass from './passingData/HomeScreenPass';
 import GlobalHomeScreenPass from './globalstyle/screens/GlobalHomeScreenPass';
 import BaseApi from './apihit/BaseApi'
-import Map from './Map'
+import BaseNotification from './notification/BaseNotification'
 import PushNotification from "react-native-push-notification";
 
 
@@ -41,5 +41,5 @@ PushNotification.configure({
 
 
 // AppRegistry.registerComponent(appName, () => HomeScreen);
-AppRegistry.registerComponent(appName, () => Map);
+AppRegistry.registerComponent(appName, () => BaseNotification);
 
